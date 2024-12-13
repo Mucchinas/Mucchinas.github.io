@@ -54,35 +54,14 @@
             padding-left: 30px;
             animation: fadeInUp 1.5s ease-in-out;
         }
-        .milestone::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 10px;
-            width: 20px;
-            height: 20px;
-            background: #ffffff;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
+
         .milestoneActual {
             margin: 20px 0;
             position: relative;
             padding-left: 30px;
             animation: fadeInUp 1.5s ease-in-out;
         }
-        .milestoneActual::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 10px;
-            width: 14px;
-            height: 14px;
-            border: 5px solid #ffffff;
-            background: #2a2a72;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
+
         .project {
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -355,75 +334,115 @@
             color: #ff8f00;
         }
 
-        .fa-chrome {
-            background: #fbc02d;
-            color: #ef6c00;
+        .sql {
+
+            background-image: url("icons/sql.png");
+            background-size: cover;
+            background-position: center;
+
         }
 
-        .fa-edge {
-            background: #03a9f4;
-            color: white;
+        .solidworks {
+
+            background-image: url("icons/solidworks.png");
+            background-size: contain;
+            background-position: center;
+
         }
 
-        .fa-android {
-            background: snow;
-            color: limegreen;
+        .blender {
+
+            background-color: white;
+            background-image: url("icons/blender.png");
+            background-size: contain;
+            background-position: center;
+
         }
 
-        .fa-apple {
-            background: #444;
-            color: white;
+        .rest {
+
+            background-image: url("icons/rest.png");
+            background-size: contain;
+            background-position: center;
+
         }
 
-        .fa-linux {
-            background: white;
-            color: #222;
+        .js {
+
+            background-image: url("icons/js.png");
+            background-size: cover;
+            background-position: center;
+
         }
 
-        .fa-windows {
-            background: white;
-            color: #03a9f4;
+        .ts {
+
+            background-image: url("icons/ts.png");
+            background-size: cover;
+            background-position: center;
+
         }
 
-        .fa-terminal {
-            background: #222;
-            color: #fff;
+        .css {
+
+            background-color: white;
+            background-image: url("icons/css.png");
+            background-size: cover;
+            background-position: center;
+
         }
 
-        .fa-html5 {
-            background: white;
-            color: #e65100;
+        .html {
+
+            background-color: white;
+            background-image: url("icons/html.png");
+            background-size: cover;
+            background-position: center;
+
         }
 
-        .fa-css3 {
-            background: white;
-            color: #2196f3;
+        .Csharp {
+            background-color: white;
+            background-image: url("icons/CSharp.png");
+            background-size: cover;
+            background-position: center;
         }
 
-        .fa-git {
-            background: #222;
-            color: white;
+        .python {
+
+            background-image: url("icons/python.png");
+            background-size: cover;
+            background-position: center;
         }
 
-        .fa-free-code-camp {
-            background: green;
-            color: white;
+        .java {
+
+            background-color: white;
+            background-image: url("icons/java.png");
+            background-size: cover;
+            background-position: center;
         }
 
         .springBoot {
+            background-color: white;
             background-image: url("icons/spring.png");
             background-size: cover;
             background-position: center;
         }
 
-        .fa-podcast {
-            background: red;
-            color: white;
+        .angular {
+
+            background-image: url("icons/angular.png");
+            background-size: cover;
+            background-position: center;
         }
 
-        .fa-codepen {
-            background: #333;
-            color: white;
+        .github {
+
+            background-color: white;
+            background-image: url("icons/github.png");
+            background-size: cover;
+            background-position: center;
         }
         .stackHeader{
 
@@ -498,6 +517,7 @@
             <li>C#</li>
             <li>JavaScript and TypeScript</li>
             <li>REST</li>
+            <li>SQL</li>
             <li>Blender3D</li>
             <li>Solidworks</li>
             <li>Spring Boot</li>
@@ -514,37 +534,33 @@
 
                 <li>
                     <ul class="ring-0">
-                        <li><i class="orbit-icon fa fa-git"></i></li>
-                        <li><i class="orbit-icon fa fa-free-code-camp"></i></li>
+                        <li><i class="orbit-icon fa python"></i></li>
+                        <li><i class="orbit-icon fa java"></i></li>
                         <li><i class="orbit-icon fa springBoot"></i></li>
-                        <li><i class="orbit-icon fa fa-codepen"></i></li>
+                        <li><i class="orbit-icon fa github"></i></li>
                     </ul>
                 </li>
 
                 <li>
                     <ul class="ring-1">
-                        <li><i class="orbit-icon fa fa-podcast"></i></li>
-                        <li><i class="orbit-icon fa fa-css3"></i></li>
-                        <li><i class="orbit-icon fa fa-html5"></i></li>
+                        <li><i class="orbit-icon fa angular"></i></li>
+                        <li><i class="orbit-icon fa Csharp"></i></li>
+                        <li><i class="orbit-icon fa html"></i></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="ring-2">
-                        <li><i class="orbit-icon fa fa-windows"></i></li>
-                        <li><i class="orbit-icon fa fa-safari"></i></li>
-                        <li><i class="orbit-icon fa fa-edge"></i></li>
-                        <li><i class="orbit-icon fa fa-linux"></i></li>
-                        <li><i class="orbit-icon fa fa-apple"></i></li>
-                        <li><i class="orbit-icon fa fa-chrome"></i></li>
-                        <li><i class="orbit-icon fa fa-android"></i></li>
-                        <li><i class="orbit-icon fa fa-firefox"></i></li>
+                        <li><i class="orbit-icon fa ts"></i></li>
+                        <li><i class="orbit-icon fa solidworks"></i></li>
+                        <li><i class="orbit-icon fa sql"></i></li>
+                        <li><i class="orbit-icon fa blender"></i></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="ring-3">
-                        <li><i class="orbit-icon fa fa-coffee"></i></li>
-                        <li><i class="orbit-icon fa fa-terminal"></i></li>
-                        <li><i class="orbit-icon fa fa-heart-o"></i></li>
+                        <li><i class="orbit-icon fa rest"></i></li>
+                        <li><i class="orbit-icon fa css"></i></li>
+                        <li><i class="orbit-icon fa js"></i></li>
                     </ul>
                 </li>
             </ul>
