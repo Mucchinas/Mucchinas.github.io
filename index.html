@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorenzo Puccianti - Software Engineer Portfolio</title>
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             margin: 0;
@@ -29,11 +29,41 @@
         }
         main {
             padding: 20px;
-            max-width: 800px;            margin: 0 auto;
+            max-width: 800px;
+            margin: 0 auto;
             animation: fadeIn 2s ease-in-out;
         }
-        .projects {
+        .roadmap {
             margin-top: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 4px;
+            height: 100%;
+            background: #ffffff;
+            animation: growLine 2s ease-in-out;
+        }
+        .milestone {
+            margin: 20px 0;
+            position: relative;
+            padding-left: 30px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .milestone::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
         .project {
             background: rgba(255, 255, 255, 0.1);
@@ -66,47 +96,64 @@
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes growLine {
+            from { height: 0; }
+            to { height: 100%; }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Lorenzo Puccianti</h1>
-        <p>Software Engineer & Aspiring Innovator</p>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Lorenzo Puccianti, a software engineer with background in programming and R&D. My expertise includes Java, Python, and C#, alongside experience in debugging, troubleshooting, and 3D modeling. I am always eager to take on new challenges and create innovative solutions.</p>
-            <p>Cybersecurity intern</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Java, Python, C#</li>
-                <li>Debugging & Software Troubleshooting</li>
-                <li>3D Modeling (Blender, SolidWorks)</li>
-                <li>Linux & IT Troubleshooting</li>
-                <li>Analytical and Organizational Skills</li>
-            </ul>
-        </section>
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Project description goes here. Replace this with details of your future project.</p>
-            </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Project description goes here. Replace this with details of your future project.</p>
-            </div>
-            <div class="project">
-                <h3>Project Title 3</h3>
-                <p>Project description goes here. Replace this with details of your future project.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Lorenzo Puccianti | All Rights Reserved</p>
-    </footer>
+<header>
+    <h1>Lorenzo Puccianti</h1>
+    <p>Software Engineer & Aspiring Innovator</p>
+</header>
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Lorenzo Puccianti, a passionate software engineer with a strong background in programming and R&D. My expertise includes Java, Python, and C#, alongside experience in debugging, troubleshooting, and 3D modeling tools like Blender and SolidWorks. I am always eager to take on new challenges and create innovative solutions.</p>
+    </section>
+    <section id="roadmap" class="roadmap">
+        <h2>Experience</h2>
+        <div class="milestone">
+            <h3>Computer Engineering Student</h3>
+            <p>November 2023 - Present</p>
+            <p>Currently pursuing a degree in Computer Engineering at Università Telematica "Guglielmo Marconi."</p>
+        </div>
+        <div class="milestone">
+            <h3>Laboratory Technician at Letomec srl</h3>
+            <p>October 2020 - June 2022</p>
+            <p>Engaged in debugging, hardware and software troubleshooting, and the design and development of machinery and technologies.</p>
+        </div>
+        <div class="milestone">
+            <h3>Student Internship at Sicer SPA</h3>
+            <p>May 2019 - July 2019</p>
+            <p>Performed quality control of raw materials, organized the warehouse, and conducted sample preparations and analyses.</p>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>Project description goes here. Replace this with details of your future project.</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <p>Project description goes here. Replace this with details of your future project.</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 3</h3>
+            <p>Project description goes here. Replace this with details of your future project.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Lorenzo Puccianti | All Rights Reserved</p>
+</footer>
 </body>
 </html>
