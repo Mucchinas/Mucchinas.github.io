@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorenzo Puccianti - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2a2a72, #009ffd);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        header p {
+            margin: 10px 0 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;            margin: 0 auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .projects {
+            margin-top: 30px;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lorenzo Puccianti</h1>
+        <p>Software Engineer & Aspiring Innovator</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Lorenzo Puccianti, a passionate software engineer with a strong background in programming and R&D. My expertise includes Java, Python, and C#, alongside experience in debugging, troubleshooting, and 3D modeling tools like Blender and SolidWorks. I am always eager to take on new challenges and create innovative solutions.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java, Python, C#</li>
+                <li>Debugging & Software Troubleshooting</li>
+                <li>3D Modeling (Blender, SolidWorks)</li>
+                <li>Linux & IT Troubleshooting</li>
+                <li>Analytical and Organizational Skills</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Project description goes here. Replace this with details of your future project.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Project description goes here. Replace this with details of your future project.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 3</h3>
+                <p>Project description goes here. Replace this with details of your future project.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lorenzo Puccianti | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
