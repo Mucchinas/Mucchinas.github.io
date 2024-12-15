@@ -33,6 +33,11 @@
             margin: 0 auto;
             animation: fadeIn 2s ease-in-out;
         }
+        h3::before{
+
+            content: '> ';
+
+        }
         .roadmap {
             margin-top: 30px;
             position: relative;
@@ -53,13 +58,11 @@
             position: relative;
             padding-left: 30px;
             animation: fadeInUp 1.5s ease-in-out;
-        }
-
-        .milestoneActual {
-            margin: 20px 0;
-            position: relative;
-            padding-left: 30px;
-            animation: fadeInUp 1.5s ease-in-out;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding-right: 20px;
+            display: inline-block;
+            background: rgba(20, 121, 252, 0.4);
         }
 
         .project {
@@ -102,7 +105,6 @@
             border-radius: 5%;
 
         }
-        /* From Uiverse.io by Ashon-G */
         .orbit {
             vertical-align: center;
             width: 100%;
@@ -449,7 +451,42 @@
             margin-top: 50px;
 
         }
+        mark{
 
+            background-color: white;
+            border-radius: 10px;
+            font-size: larger;
+            font: -apple-system-headline;
+            font-weight: bold;
+
+        }
+        mark:before{
+
+            content: "<";
+
+        }
+        mark:after{
+
+            content: ">";
+
+        }
+        .projectTitle:before{
+
+            content: "> ";
+
+        }
+        .stackClass{
+
+            border: 2px solid white;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background: rgba(20, 121, 252, 0.4);
+            font-size: 20px;
+
+        }
 
 
 
@@ -482,20 +519,21 @@
 <main>
     <section id="about">
         <h2>About Me</h2>
-        <p>Software developer experienced with programming and R&D. My expertise includes Java, Python, and C#, alongside experience in debugging, troubleshooting, and 3D modeling tools like Blender and SolidWorks. I am always eager to take on new challenges and create innovative solutions.</p>
+        <p style="font-size: 18px">Software Engineering student with work experience in setting up Linux environment of proprietary company machines, debugging, R&D and 3D modeling.
+            <br><br>Worked on numerous personal projects with Java, Python, C# and frameworks like Angular and Spring Boot.</p>
     </section>
     <section>
     </section>
     <section id="roadmap" class="roadmap">
         <h2>Experience</h2>
-        <div class="milestoneActual">
+        <div class="milestone">
             <h3>Cybersecurity Intern</h3>
-            <p class="time">January 2025 - <b>Present</b></p>
+            <p class="time">January 2025 - <mark>Present</mark></p>
             <p>Internship at Pentaqo as a Cybersecurity Consultant and Developer</p>
         </div>
-        <div class="milestoneActual">
+        <div class="milestone">
             <h3>Computer Engineering Student</h3>
-            <p class="time">November 2023 - <b>Present</b></p>
+            <p class="time">November 2023 - <mark>Present</mark></p>
             <p>Currently pursuing a degree in Computer Engineering at Università "Guglielmo Marconi."</p>
         </div>
         <div class="milestone">
@@ -509,7 +547,7 @@
             <p>Performed quality control of raw materials, organized the warehouse, and conducted sample preparations and analyses.</p>
         </div>
     </section>
-    <section>
+    <section class="stackClass">
         <h2 class="stackHeader">Stack</h2>
         <ul>
             <li>Java</li>
@@ -524,6 +562,7 @@
             <li>Angular</li>
             <li>GitHub</li>
         </ul>
+    </section>
         <div class="orbit">
 
             <ul class="orbit-wrap">
@@ -565,20 +604,19 @@
                 </li>
             </ul>
         </div>
-    </section>
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2 style="font-size: 30px">Projects</h2>
         <div class="project">
             <h3 class="projectTitle">Chat Webapp with Gemini API</h3>
             <img src="angularWebApp.png" width="100%" height="100%" alt="gemini-chat-api"/>
-            <p style="text-align: center">Webapp made with <mark style="border-radius: 15%">Angular</mark>, <mark style="border-radius: 15%">Spring Boot</mark> and Microsoft <mark style="border-radius: 15%">SQL</mark> Database</p>
-            <p style="text-align: center"><mark style="border-radius: 15%">REST API</mark>, SQL Queries and <mark style="border-radius: 15%">GEMINI API</mark> integration</p>
+            <p style="text-align: center">Webapp made with <mark>Angular</mark>, <mark>Spring Boot</mark> and Microsoft <mark>SQL</mark> Database</p>
+            <p style="text-align: center"><mark>REST API</mark>, SQL Queries and <mark>GEMINI API</mark> integration</p>
         </div>
         <div class="project">
-            <h3>Java Game Engine</h3>
+            <h3 class="projectTitle">Java Game Engine</h3>
             <img src="javaGame.png" width="100%" height="100%" alt="java-game-engine"/>
-            <p style="text-align: center">Block breaker <mark style="border-radius: 15%">JAVA</mark> game made from scratch</p>
-            <p style="text-align: center">Entirely made with <mark style="border-radius: 15%">Graphics</mark> java library</p>
+            <p style="text-align: center">Block breaker <mark>JAVA</mark> game made from scratch</p>
+            <p style="text-align: center">Entirely made with <mark>Graphics</mark> java library</p>
         </div>
     </section>
 </main>
