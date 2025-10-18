@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorenzo Puccianti - Portfolio</title>
+    <link rel="shortcut icon" href="icons/LPicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Lorenzo Puccianti</h1>
+    <p>Consulente Cybersecurity & Sviluppatore Full-Stack</p>
+    <a href="index.en.html" class="lang-switch">English</a> 
+</header>
+
+<main>
+    <section id="intro">
+        <h2>Benvenuto nel mio portfolio</h2>
+        <p>
+            Sono un professionista junior con un background ibrido unico, che unisce la <strong>cybersecurity governance</strong> strategica con lo <strong>sviluppo software full-stack</strong> pratico. La mia esperienza mi permette di costruire applicazioni non solo funzionali, ma anche sicure e conformi *by design*.
+        </p>
+        <p>
+            Oltre allo sviluppo di applicazioni cloud-native (<strong>Spring Boot</strong>, <strong>NodeJS</strong>, <strong>React</strong>), ho una forte competenza in ambito <strong>DevOps</strong>, automazione e intelligenza artificiale. Le mie aree di specializzazione includono:
+        </p>
+        
+        <ul class="intro-bullets"> <li>Gestione di pipeline <strong>CI/CD</strong> e <strong>deployment in cloud</strong>, utilizzando <strong>Docker</strong> per containerizzare e orchestrare i servizi in ambienti single-tenant.</li>
+            <li>Automazione di workflow complessi tramite <strong>n8n</strong> e sviluppo di script e modelli <strong>AI</strong> opensource (usando PyTorch, Hugging Face) per l'ottimizzazione dei processi.</li>
+            <li>Esperienza diretta in compliance <strong>ISO (27001)</strong> e regolamenti come <strong>GDPR</strong> e <strong>NIS2</strong>, applicando i principi di <strong>Security by Design</strong>.</li>
+        </ul>
+        <a href="about.it.html" class="cta-button">Scopri di più</a>
+    </section>
+    
+    <section id="work-projects" class="projects">
+        <h2>Progetti Lavorativi</h2>
+        
+        <div class="project-grid">
+            
+            <div class="project">
+                <h3>Architettura API Headless & Integrazione</h3>
+                <div class="project-tech-icons">
+                    <i class="devicon-spring-plain" title="Spring Boot"></i>
+                    <i class="devicon-react-original" title="React"></i>
+                    <i class="devicon-nodejs-plain" title="Node.js"></i>
+                    <i class="devicon-docker-plain" title="Docker"></i>
+                    <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                </div>
+                <div class="project-description">
+                    <p>
+                        In qualità di <strong>team leader</strong> tecnico, ho guidato la progettazione e lo sviluppo di un nuovo servizio <strong>headless</strong> per un cliente enterprise.
+                    </p>
+                    <ul>
+                        <li>Definizione dell'<strong>architettura software</strong> basata su microservizi con <strong>Spring Boot</strong>.</li>
+                        <li>Progettazione e implementazione di <strong>API REST</strong> sicure e performanti per l'integrazione con sistemi esterni.</li>
+                        <li>Impostazione completa delle pipeline <strong>DevOps</strong> (CI/CD) per automatizzare build, test e deploy.</li>
+                        <li>Applicazione rigorosa dei principi di <strong>sviluppo sicuro</strong> (Secure by Design) e best practice di coding.</li>
+                        <li>Gestione della sfida tecnica di un'integrazione stretta e complessa con un applicativo <strong>cloud React/NodeJS</strong> esistente.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Evoluzione e Gestione Applicativo Cloud</h3>
+                <div class="project-tech-icons">
+                    <i class="devicon-nodejs-plain" title="Node.js"></i>
+                    <i class="devicon-react-original" title="React"></i>
+                    <i class="devicon-docker-plain" title="Docker"></i>
+                    <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Inserito nel team di sviluppo di un applicativo aziendale SaaS basato su <strong>NodeJS</strong> e <strong>React</strong>.
+                    </p>
+                    <ul>
+                        <li>Attività avanzata di <strong>QA</strong> e <strong>troubleshooting</strong> per identificare e risolvere bug complessi in produzione.</li>
+                        <li>Contributo attivo allo sviluppo di nuove <em>features</em>, dal backend <strong>NodeJS</strong> fino al frontend <strong>React</strong>.</li>
+                        <li>Esecuzione di attività di <em>refactoring</em> del codice per migliorare la manutenibilità e le performance.</li>
+                        <li>Gestione in autonomia dell'intero ciclo di <strong>deployment</strong> in ambiente cloud (AWS/Azure).</li>
+                        <li>Configurazione e manutenzione dei container <strong>Docker</strong> in un'architettura single-tenant per garantire l'isolamento dei clienti.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="personal-projects" class="projects">
+        <h2>Progetti Personali</h2>
+        
+        <div class="project-grid">
+
+            <div class="project">
+                <h3>AI Chat Webapp</h3>
+                <div class="project-tech-icons">
+                    <i class="devicon-spring-plain" title="Spring Boot"></i>
+                    <i class="devicon-angularjs-plain" title="Angular"></i>
+                    <i class="devicon-microsoftsqlserver-plain" title="MSSQL"></i>
+                </div>
+                <div class="project-modal-media">
+                    <img src="angularWebApp.png" alt="Gemini Chat Webapp Screenshot"/>
+                </div>
+                <div class="project-description">
+                    <p>Un'applicazione di chat full-stack che utilizza l'API Gemini di Google. Il backend è costruito con <strong>Spring Boot</strong> e un database <strong>SQL</strong>, servendo un frontend reattivo in <strong>Angular</strong> tramite una <strong>REST API</strong>. Include l'integrazione diretta dell'<strong>API GEMINI</strong> per risposte generative.</p>
+                </div>
+            </div>
+            
+            <div class="project">
+                <h3>Game Engine Java</h3>
+                <div class="project-tech-icons">
+                    <i class="devicon-java-plain" title="Java"></i>
+                </div>
+                <div class="project-modal-media">
+                    <video controls>
+                        <source src="https://github.com/user-attachments/assets/ac9382ab-4627-4624-8d34-58cb3d07db1f" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-description">
+                    <p>Un motore di gioco 2D per un clone di 'Block Breaker', costruito da zero in puro <strong>JAVA</strong>. Tutto il rendering, la fisica e la logica di gioco sono programmati su misura, utilizzando esclusivamente la libreria <strong>Graphics</strong> di base.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Lorenzo Puccianti | Tutti i diritti riservati</p>
+</footer>
+
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <div id="modal-media-container"></div>
+        <div id="modal-description"></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
