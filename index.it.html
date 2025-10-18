@@ -94,6 +94,36 @@
         <div class="project-grid">
 
             <div class="project">
+                <h3>ERP Multi-Tenant</h3>
+                <div class="project-tech-icons">
+                    <i class="devicon-spring-plain" title="Spring Boot"></i>
+                    <i class="devicon-react-original" title="React"></i>
+                    <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                    <i class="devicon-redis-plain" title="Redis"></i>
+                    <i class="devicon-prometheus-original" title="Prometheus"></i>
+                    <i class="devicon-grafana-plain" title="Grafana"></i>
+                    <i class="devicon-nginx-original" title="NGINX"></i>
+                    <i class="devicon-neo4j-plain" title="Neo4j"></i>
+                    <i class="devicon-flask-original" title="Flask"></i>
+
+                </div>
+                <div class="project-modal-media">
+                    <img src="./imgs/orbytehome.png" alt="ORBYTE Home"/>
+                </div>
+                
+                <div class="project-description">
+                    <p>Una piattaforma SaaS/ERP multi-tenant completa per la gestione dell'inventario, sviluppata interamente da solo e architettata end-to-end, coprendo l'intero ciclo di vita del software.</p>
+                    <ul>
+                        <li><strong>Backend:</strong> Architettura multi-tenant (<strong>schema-per-tenant</strong>) in <strong>Spring Boot</strong> (gestione datasource routing basato su JWT) e un microservizio <strong>Flask</strong> per il provisioning automatico dei tenant e i backup.</li>
+                        <li><strong>Data Layer:</strong> Utilizzata una strategia dati ibrida, integrando <strong>PostgreSQL</strong> (dati relazionali), <strong>Redis</strong> per la cache ad alte prestazioni e <strong>Neo4j</strong> per mappare relazioni complesse di inventario e supply chain.</li>
+                        <li><strong>Frontend:</strong> Sviluppata una dashboard amministrativa responsive in <strong>React</strong>.</li>
+                        <li><strong>DevOps & Monitoring:</strong> Containerizzati tutti i servizi (Docker) e configurato <strong>NGINX</strong> come reverse proxy. Implementato uno stack di osservabilità completo con <strong>Prometheus</strong> (metriche) e <strong>Grafana</strong> (dashboard).</li>
+                        <li><strong>Funzionalità:</strong> Integrato <strong>MinIO</strong> (S3-like) per lo storage di documenti, Authentik per OIDC/SSO, e <strong>n8n</strong> per l'automazione dei workflow (AI Assistant).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
                 <h3>AI Chat Webapp</h3>
                 <div class="project-tech-icons">
                     <i class="devicon-spring-plain" title="Spring Boot"></i>
@@ -101,7 +131,7 @@
                     <i class="devicon-microsoftsqlserver-plain" title="MSSQL"></i>
                 </div>
                 <div class="project-modal-media">
-                    <img src="angularWebApp.png" alt="Gemini Chat Webapp Screenshot"/>
+                    <img src="./imgs/angularWebApp.png" alt="Gemini Chat Webapp Screenshot"/>
                 </div>
                 <div class="project-description">
                     <p>Un'applicazione di chat full-stack che utilizza l'API Gemini di Google. Il backend è costruito con <strong>Spring Boot</strong> e un database <strong>SQL</strong>, servendo un frontend reattivo in <strong>Angular</strong> tramite una <strong>REST API</strong>. Include l'integrazione diretta dell'<strong>API GEMINI</strong> per risposte generative.</p>

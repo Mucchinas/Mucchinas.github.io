@@ -93,6 +93,36 @@
         <h2>Personal Projects</h2>
         
         <div class="project-grid">
+            
+            <div class="project">
+                <h3>Multi-Tenant ERP</h3>
+                <div class="project-tech-icons">
+                    <i class="devicon-spring-plain" title="Spring Boot"></i>
+                    <i class="devicon-react-original" title="React"></i>
+                    <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                    <i class="devicon-redis-plain" title="Redis"></i>
+                    <i class="devicon-prometheus-original" title="Prometheus"></i>
+                    <i class="devicon-grafana-plain" title="Grafana"></i>
+                    <i class="devicon-nginx-original" title="NGINX"></i>
+                    <i class="devicon-neo4j-plain" title="Neo4j"></i>
+                    <i class="devicon-flask-original" title="Flask"></i>
+
+                </div>
+                <div class="project-modal-media">
+                    <img src="./imgs/orbytehome.png" alt="Gemini Chat Webapp Screenshot"/>
+                </div>
+                
+                <div class="project-description">
+                    <p>A comprehensive, <strong>solo-developed</strong> multi-tenant ERP/SaaS platform for inventory management, architected from the ground up. This project covers the full end-to-end software lifecycle.</p>
+                    <ul>
+                        <li><strong>Backend:</strong> Architected a multi-tenant <strong>schema-per-tenant</strong> system in <strong>Spring Boot</strong> (handling JWT-based datasource routing) and a <strong>Flask</strong> microservice for automated tenant provisioning and backups.</li>
+                        <li><strong>Data Layer:</strong> Utilized a hybrid data strategy, integrating <strong>PostgreSQL</strong> (main relational data), <strong>Redis</strong> for high-speed caching, and <strong>Neo4j</strong> to map complex inventory and supply chain relationships.</li>
+                        <li><strong>Frontend:</strong> Developed a responsive administrative dashboard using <strong>React</strong>.</li>
+                        <li><strong>DevOps & Monitoring:</strong> Containerized all services (Docker) and configured <strong>NGINX</strong> as the reverse proxy. Implemented a full observability stack using <strong>Prometheus</strong> for metrics and <strong>Grafana</strong> for visualization.</li>
+                        <li><strong>Features:</strong> Integrated <strong>MinIO</strong> (S3-like) for document storage, Authentik for OIDC/SSO, and <strong>n8n</strong> for workflow automation (AI Assistant).</li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="project">
                 <h3>AI Chat Webapp</h3>
@@ -102,7 +132,7 @@
                     <i class="devicon-microsoftsqlserver-plain" title="MSSQL"></i>
                 </div>
                 <div class="project-modal-media">
-                    <img src="angularWebApp.png" alt="Gemini Chat Webapp Screenshot"/>
+                    <img src="./imgs/angularWebApp.png" alt="Gemini Chat Webapp Screenshot"/>
                 </div>
                 <div class="project-description">
                     <p>A full-stack chat application leveraging Google's Gemini API. The backend is built with <strong>Spring Boot</strong> and an <strong>SQL</strong> database, serving a reactive <strong>Angular</strong> frontend via a <strong>REST API</strong>. Features direct <strong>GEMINI API</strong> integration for generative responses.</p>
